@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.top .overlay {
+    width: 100%;
+    min-height: inherit;
+    position: relative;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: black;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.text .image {
+    background-image: url(img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+
+.rtext {
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.b1, .b2, .b3 {
+    min-height: inherit;
+    padding: 2vw;
+}
+
+.b1 {
+    width: 30%;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.b2 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.b2 .up {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(img/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 1vw;
+}
+
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(img/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 1vw;
+}
+
+.b3 {
+    width: 40%;
+    background-image: url(img/bg5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.b3 .overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 2vh;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.b3 .overlay p {
+    margin: 1.2vh 0;
+}
+
+@media (max-width: 768px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 5vh;
+    }
+
+    .text h1 {
+        font-size: 8vw;
+    }
+
+    .text .image {
+        height: 200px;
+        width: 140px;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .b1, .b2, .b3 {
+        width: 100%;
+        min-height: auto;
+        padding: 5vw 2vw;
+    }
+
+    .b3 .overlay {
+        margin-left: 0;
+        width: 100%;
+    }
+}
